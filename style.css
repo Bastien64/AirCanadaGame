@@ -1,0 +1,239 @@
+@media only screen and (min-width: 767px) {
+
+    body {
+        width: 100%;
+        background-color: #F7F7F7 !important;
+    }
+
+
+
+    .custom-ml-auto {
+        margin-left: auto;
+        margin-right: 0%;
+    }
+
+    .nav-item {
+        margin-left: 50px !important;
+    }
+
+    .textnavbar {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .photoaviontop {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photoavion {
+        width: 95%;
+        height: auto;
+    }
+
+    .texttop {
+        width: 70%;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 5%;
+        padding: 2%;
+    }
+
+    .intertoptext {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        width: 425.019px;
+        height: 1px;
+        background: #000;
+    }
+
+
+    .intersection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        width: 50%;
+        height: 14px;
+        background: #DC3C42;
+    }
+
+    .outfleet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 4%;
+    }
+
+    .ourfleet {
+        margin-top: 4%;
+        width: 90%;
+    }
+
+    .ourpartners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        background-color: white;
+        width: 90%;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 2%;
+    }
+
+    .partners {
+        margin-top: 2%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .staralliance {
+        width: 260px;
+
+    }
+
+    .compagnies {
+        width: 100%;
+        height: auto;
+        margin-left: 2%;
+    }
+
+    .twodiv {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 4%;
+    }
+
+    .ourpilots {
+        border-radius: 20px;
+        width: 50%;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .effetjavascript {
+        width: 40%;
+        padding: 2%;
+        background-color: black;
+        border-radius: 20px;
+
+    }
+
+    .aboutus {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: end;
+        justify-content: space-around;
+        margin: auto;
+        width: 90%;
+        padding: 2%;
+        height: auto;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+    .textaboutus {
+        width: 25%;
+    }
+    .logovatsim {
+        width: 50%;
+        height: auto;
+    }
+
+    .intersection2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        width: 50%;
+        height: 0px;
+        background: #ffffff;
+    }
+    .staff {
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: start;
+        justify-content: space-between;
+        margin: auto;
+        width: 90%;
+        height: auto;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+    .textstaff {
+        width: 35%;
+        padding-right: 5%;
+
+
+    }
+    .team {
+        width: 50%;
+        height: auto;
+        border-radius: 20px 0px 0px 20px;
+
+    }
+
+        /*footer*/
+        footer {
+            padding: 2% 2% 2% 2%;
+            margin-top: 4%;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            background-color: black;
+
+        }
+        
+
+
+        .logoairfooter {
+            width: 30%;
+        }
+        
+        .infolegale {
+            width: 55%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .infolegale p {
+            font-size: small;
+            margin-left: 2%;
+        }
+}
