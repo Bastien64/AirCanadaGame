@@ -1,6 +1,5 @@
 {
     "thisWeek": {
-        "generated": "2023-09-22T04:15:48.867251Z",
         "points": [
             {
                 "result": 2656,
@@ -55,15 +54,16 @@
                 "username": "ACV0008"
             },
             {
-                "result": 33332,
-                "id": 236467,
-                "username": "ACV0004"
-            },
-            {
                 "result": 22847,
                 "id": 237679,
                 "username": "ACV0011"
             },
+            {
+                "result": 33332,
+                "id": 236467,
+                "username": "ACV0004"
+            },
+
             {
                 "result": 18015,
                 "id": 237567,
@@ -93,14 +93,15 @@
             },
             {
                 "result": 3,
-                "id": 236467,
-                "username": "ACV0004"
-            },
-            {
-                "result": 3,
                 "id": 237679,
                 "username": "ACV0011"
             },
+            {
+                "result": 3,
+                "id": 236467,
+                "username": "ACV0004"
+            },
+
             {
                 "result": 2,
                 "id": 237567,
@@ -114,6 +115,11 @@
         ],
         "bonus": [
             {
+                "result": 0,
+                "id": 236374,
+                "username": "ACV0002"
+            },
+            {
                 "result": 1340,
                 "id": 237587,
                 "username": "ACV0008"
@@ -124,19 +130,30 @@
                 "username": "ACV0009"
             },
             {
-                "result": 340,
-                "id": 237567,
-                "username": "ACV0007"
-            },
-            {
                 "result": 0,
-                "id": 236374,
-                "username": "ACV0002"
+                "id": 237679,
+                "username": "ACV0011"
             },
             {
                 "result": 0,
                 "id": 236467,
                 "username": "ACV0004"
+            },
+            {
+                "result": 340,
+                "id": 237567,
+                "username": "ACV0007"
+            },
+
+            {
+                "result": 0,
+                "id": 236467,
+                "username": "ACV0004"
+            },
+            {
+                "result": 0,
+                "id": 238322,
+                "username": "ACV0013"
             }
         ]
     },

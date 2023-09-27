@@ -126,5 +126,6 @@ fetch('data.json')
         
           // Ajouter la ligne du tableau au corps du tableau
           tableBody.appendChild(row);
+          console.log(data.thisWeek);
         });
     })
