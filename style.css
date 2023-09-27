@@ -6,6 +6,9 @@
     }
 
 
+    nav {
+        margin-bottom: 2%;
+    }
 
     .custom-ml-auto {
         margin-left: auto;
@@ -34,9 +37,29 @@
         justify-content: center;
     }
 
+    button {
+        width: 150px;
+        height: 50px;
+        background-color: #DC3C42;
+        color: white;
+        font-weight: 700 !important;
+        border-radius: 30px !important;
+        font-size: 20px !important;
+        border: none;
+    }
+
+    .bouton {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+
     .photoavion {
         width: 95%;
         height: auto;
+        opacity: 0.9;
     }
 
     .texttop {
@@ -52,6 +75,15 @@
         margin: auto;
         margin-top: 5%;
         padding: 2%;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    /* Ajoutez une classe pour l'effet d'apparition */
+    .texttop.appear {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .intertoptext {
@@ -81,12 +113,16 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin-bottom: 4%;
+        margin: auto;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 2%;
+        width: 90%;
     }
-
     .ourfleet {
         margin-top: 4%;
-        width: 90%;
+        width: 70%;
     }
 
     .ourpartners {
@@ -98,10 +134,23 @@
         margin: auto;
         background-color: white;
         width: 90%;
+        padding: 2%;
         border-radius: 20px;
         background-color: white;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        padding: 2%;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    /* Ajoutez une classe pour l'effet d'apparition */
+    .ourpartners.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .visible {
+        display: flex;
     }
 
     .partners {
@@ -127,6 +176,15 @@
         justify-content: space-around;
         width: 100%;
         padding: 4%;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    /* Ajoutez une classe pour l'effet d'apparition */
+    .twodiv.appear {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .ourpilots {
@@ -148,6 +206,7 @@
 
     }
 
+
     .aboutus {
         display: flex;
         flex-direction: row;
@@ -161,10 +220,21 @@
         background-color: white;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
     }
+
+    /* Ajoutez une classe pour l'effet d'apparition */
+    .aboutus.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     .textaboutus {
         width: 25%;
     }
+
     .logovatsim {
         width: 50%;
         height: auto;
@@ -181,6 +251,7 @@
         height: 0px;
         background: #ffffff;
     }
+
     .staff {
 
         display: flex;
@@ -194,13 +265,24 @@
         background-color: white;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
     }
+
+    /* Ajoutez une classe pour l'effet d'apparition */
+    .staff.appear {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
     .textstaff {
         width: 35%;
         padding-right: 5%;
 
-
     }
+
     .team {
         width: 50%;
         height: auto;
@@ -208,32 +290,51 @@
 
     }
 
-        /*footer*/
-        footer {
-            padding: 2% 2% 2% 2%;
-            margin-top: 4%;
-            display: flex;
-            flex-direction: row;
-            color: white;
-            background-color: black;
-
-        }
-        
+    /*footer*/
+    footer {
+        padding: 2% 2% 2% 2%;
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+        background-color: black;
 
 
-        .logoairfooter {
-            width: 30%;
-        }
-        
-        .infolegale {
-            width: 55%;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-        }
-        
-        .infolegale p {
-            font-size: small;
-            margin-left: 2%;
-        }
+    }
+
+    .reseaux {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 700;
+    }
+
+    .logoairfooter {
+        width: 100%;
+    }
+
+    .infolegale {
+        width: 25%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        text-align: start;
+        font-weight: 700;
+    }
+
+
+    .disclamer {
+        width: 25%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .simbitfooter {
+        width: 50%;
+    }
 }
