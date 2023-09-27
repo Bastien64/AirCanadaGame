@@ -67,28 +67,64 @@ showElementIfInViewport('.aboutus');
 showElementIfInViewport('.staff');
 
 
+
+// Détecter le défilement de la page
 window.addEventListener("scroll", function () {
     var navSection = document.getElementById("nav-section");
     var boutonSection = document.querySelector(".bouton");
     var fleetSection = document.getElementById("fleet");
     var outfleetSection = document.querySelector(".outfleet");
-    var navbarPlaceholder = document.querySelector(".navbar-placeholder"); // Ajout de cette ligne
 
+    // Hauteur de défilement actuelle
     var scrollHeight = window.scrollY;
+
+    // Hauteur de la section "fleet"
     var fleetSectionTop = fleetSection.offsetTop;
+
+    // Hauteur de la section "outfleet"
     var outfleetSectionTop = outfleetSection.offsetTop;
 
+    // Si l'utilisateur n'a pas encore atteint la section "fleet"
     if (scrollHeight < fleetSectionTop) {
+        // Rendre la barre de navigation et la section "bouton" fixes en haut
         navSection.classList.add("fixed-top");
         boutonSection.classList.remove("hidden");
-        navbarPlaceholder.style.display = "block"; // Ajout de cette ligne
     } else if (scrollHeight >= fleetSectionTop && scrollHeight < outfleetSectionTop) {
+        // Si l'utilisateur est dans la section "fleet", masquer la barre de navigation et la section "bouton"
         navSection.classList.remove("fixed-top");
         boutonSection.classList.add("hidden");
-        navbarPlaceholder.style.display = "none"; // Ajout de cette ligne
     } else {
+        // Si l'utilisateur est dans la section "outfleet", masquer la barre de navigation et la section "bouton"
         navSection.classList.remove("fixed-top");
         boutonSection.classList.add("hidden");
-        navbarPlaceholder.style.display = "none"; // Ajout de cette ligne
     }
 });
+
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        const tableBody = document.getElementById('table-body');
+        const thisWeekData = data.thisWeek;
+        
+        // Parcourir les données de points
+        thisWeekData.points.forEach(item => {
+          const row = document.createElement('tr');
+        
+          // Trouver les données de temps, de vols et de bonus pour l'utilisateur actuel
+          const timeResult = thisWeekData.time.find(timeItem => timeItem.id === item.id).result;
+          const flightsResult = thisWeekData.flights.find(flightItem => flightItem.id === item.id).result;
+          const bonusResult = thisWeekData.bonus.find(bonusItem => bonusItem.id === item.id).result;
+        
+          // Ajouter les données à la ligne du tableau
+          row.innerHTML = `
+            <td>${item.username}</td>
+            <td>${item.result}</td>
+            <td>${timeResult}</td>
+            <td>${flightsResult}</td>
+            <td>${bonusResult}</td>
+          `;
+        
+          // Ajouter la ligne du tableau au corps du tableau
+          tableBody.appendChild(row);
+        });
+    })
