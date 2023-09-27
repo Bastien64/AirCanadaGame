@@ -5,7 +5,10 @@
         background-color: #F7F7F7 !important;
     }
 
-
+ a {
+    text-decoration: none !important;
+    color: white !important;
+ }
     nav {
         margin-bottom: 2%;
     }
