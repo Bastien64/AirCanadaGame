@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styledeparture.css">
-    <link rel="icon" type="image/x-icon"  href="logo/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="logo/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>AirCanada VIRTUAL </title>
@@ -61,7 +61,8 @@
 
     <div class="bouton fixed-top2" id="top">
         <a href="https://vamsys.io/login/acvirutal" target="_blank" rel="noopener noreferrer"><button>LOGIN</button></a>
-        <a href="https://vamsys.io/register/acvirutal" target="_blank" rel="noopener noreferrer"><button>REGISTER</button></a>
+        <a href="https://vamsys.io/register/acvirutal" target="_blank"
+            rel="noopener noreferrer"><button>REGISTER</button></a>
         <a href="https://discord.gg/acvirtual" target="_blank" rel="noopener noreferrer"><button>DISCORD</button></a>
     </div>
     <div class="photoaviontop">
@@ -70,7 +71,12 @@
     <div class="texttop">
         <h1 class="texttop1" style="font-weight: 700; ">AIR CANADA <span style="color:#F00 ;">VIRTUAL</span></h1>
         <div class="intertoptext"></div>
-        <p>We stand at the pinnacle of virtual aviation, where professionalism, precision, and passion converge. Our community represents the epitome of virtual flight simulation, offering an unparalleled experience for both seasoned pilots and aspiring enthusiasts.  Our community is characterized by a professional approach to virtual aviation. We adhere to real-world aviation standards, ensuring that every flight is conducted with the utmost precision and attention to detail. Just like Air Canada's real-world pilots, our members embody the professionalism expected in the aviation industry.
+        <p>We stand at the pinnacle of virtual aviation, where professionalism, precision, and passion converge. Our
+            community represents the epitome of virtual flight simulation, offering an unparalleled experience for both
+            seasoned pilots and aspiring enthusiasts. Our community is characterized by a professional approach to
+            virtual aviation. We adhere to real-world aviation standards, ensuring that every flight is conducted with
+            the utmost precision and attention to detail. Just like Air Canada's real-world pilots, our members embody
+            the professionalism expected in the aviation industry.
         </p>
     </div>
 
@@ -86,7 +92,11 @@
     <div class="ourpartners" id="partners">
         <h1 style="font-weight: 700;">OUR PARTNERS</h1>
         <h3 style="font-weight: 700; color: #DC3C42;">STAR ALLIANCE</h3>
-        <p>At Air Canada VATSIM, we're not just dedicated to delivering an exceptional virtual aviation experience; we're also committed to broadening your horizons. That's why we're proud to announce our partnership with Star Alliance, the world's largest airline alliance. Our collaboration with Star Alliance represents a significant milestone in our journey toward excellence in virtual aviation. As a member of our community, you'll have the unique opportunity to explore the world's skies with even greater depth and authenticity.
+        <p>At Air Canada VATSIM, we're not just dedicated to delivering an exceptional virtual aviation experience;
+            we're also committed to broadening your horizons. That's why we're proud to announce our partnership with
+            Star Alliance, the world's largest airline alliance. Our collaboration with Star Alliance represents a
+            significant milestone in our journey toward excellence in virtual aviation. As a member of our community,
+            you'll have the unique opportunity to explore the world's skies with even greater depth and authenticity.
         </p>
         <div class="partners">
             <div><img src="photo/Logo_Star_Alliance.svg.png" alt="staralliance" class="staralliance"></div>
@@ -97,26 +107,76 @@
     <div class="twodiv" id="staff">
         <div class="ourpilots">
             <h1 style="font-weight: 700;">OUR PILOTS</h1>
-            <table class="table">
-                <h2>This Week</h2>
-                <thead>
-                    <tr>
-                        <th scope="col">USER NAME</th>
-                        <th scope="col">POINTS</th>
-                        <th scope="col">TIME</th>
-                        <th scope="col">FLIGHTS</th>
-                        <th scope="col">BONUS</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                    <!-- Les données seront insérées ici -->
-                </tbody>
-            </table>
+            <h3 style="font-weight: 700; color: #DC3C42;">STATISTICS</h3>
+            <p>
+                <a class="btn btn-danger" data-bs-toggle="collapse" href="#thisweek" role="button" aria-expanded="true"
+                    aria-controls="thisweek">
+                    This Week
+                </a>
+                <a class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#thismonth2"
+                    aria-expanded="false" aria-controls="thismonth2">
+                    This Month
+                </a>
+                <a class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#alltime"
+                    aria-expanded="false" aria-controls="alltime">
+                    All time
+                </a>
+            </p>
+            <div class="collapse" id="thisweek">
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">USER NAME</th>
+                            <th scope="col">POINTS</th>
+                            <th scope="col">TIME</th>
+                            <th scope="col">FLIGHTS</th>
+                            <th scope="col">BONUS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="this-week-table-body">
+                        <!-- Les données seront insérées ici -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="collapse" id="thismonth2">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">USER NAME</th>
+                            <th scope="col">POINTS</th>
+                            <th scope="col">TIME</th>
+                            <th scope="col">FLIGHTS</th>
+                            <th scope="col">BONUS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="this-month-table-body">
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="collapse" id="alltime">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">USER NAME</th>
+                            <th scope="col">POINTS</th>
+                            <th scope="col">TIME</th>
+                            <th scope="col">FLIGHTS</th>
+                            <th scope="col">BONUS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="all-time-table-body">
+                    </tbody>
+                </table>
+
+            </div>
         </div>
         <div class="airport-board">
             <div class="flight">
                 <div class="flight-info">
-                    <span >Flight AC123</span>
+                    <span>Flight AC123</span>
                     <span style="margin-right: 10px;">Halifax</span>
                 </div>
                 <div class="flight-status animate-flicker">Boarding</div>
@@ -150,50 +210,93 @@
         <div class="aboutus" id="about">
             <div class="textaboutus">
                 <h1 style="font-weight: 700;">ABOUT US</h1>
-                <p>At Air Canada VIRTUAL, we're more than just a virtual airline; we're a passionate community of aviation enthusiasts who share a common love for the skies. Whether you're a seasoned virtual pilot or just taking your first steps into the world of flight simulation, you've found your home among the clouds.</p>
+                <p>At Air Canada VIRTUAL, we're more than just a virtual airline; we're a passionate community of
+                    aviation enthusiasts who share a common love for the skies. Whether you're a seasoned virtual pilot
+                    or just taking your first steps into the world of flight simulation, you've found your home among
+                    the clouds.</p>
             </div>
             <a href="https://vatsim.net" target="_blank">
                 <img src="logo/Logo_VATSIM.png" alt="Logo VATSIM" class="logovatsim">
-              </a>
-              
+            </a>
+
         </div>
 
         <div class="intersection2"></div>
         <div class="staff">
-            <div class="textstaff">
-                <h1 style="font-weight: 700;">OUR STAFF</h1>
-                <h3 style="font-weight: 700; color: #DC3C42;">AND THE FLYING TEAM</h3>
-                <p>At AirCanada VIRTUAL, we take pride in the exceptional talent and dedication of our staff, much like the renowned team at Air Canada. Our commitment to providing you with the most authentic and immersive flight simulation experience begins with the people who make it all possible.</p>
-            </div>
-            <img src="photo/team.jpg" alt="Logo VATSIM" class="team">
+            <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Callsign</th>
+                        <th>Flight Number</th>
+                        <th>PAX</th>
+                        <th>Cargo</th>
+                        <th>Route</th>
+                        <th>Network</th>
+                        <th>Altitude</th>
+                        <th>Heading</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Groundspeed</th>
+                        <th>Distance Remaining</th>
+                        <th>Time Remaining</th>
+                        <th>Distance Flown</th>
+                        <th>Departure Time</th>
+                        <th>Estimated Arrival Time</th>
+                        <th>Time Flown</th>
+                        <th>Aircraft Registration</th>
+                        <th>Aircraft Name</th>
+                        <th>Aircraft Code</th>
+                        <th>Aircraft Codename</th>
+                        <th>Departure Airport</th>
+                        <th>Arrival Airport</th>
+                        <th>Pilot Username</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Les données JSON seront insérées ici -->
+                </tbody>
+            </table>
+            </div>  
         </div>
+
     </div>
+    
 
 
     <footer>
         <div class="reseaux">
             <img src="logo/LogoMoyen.png" alt="logo air canada" class="logoairfooter">
         </div>
-        <div class="infolegale">
+        <div class="footer2">        
+            <div class="infolegale">
             <h3 style="text-decoration: underline;">SITE MAP </H3>
-            <a href="#fleet"><p>OUR FLEET</p></a>
-            <a href="#pilots"><p>OUR PILOTS</p></a>
-            <a href="#about"><p>ABOUT US</p></a>
-            <a href="#staff"><p>OUR TEAM</p></a>
+            <a href="#fleet">
+                <p>OUR FLEET</p>
+            </a>
+            <a href="#pilots">
+                <p>OUR PILOTS</p>
+            </a>
+            <a href="#about">
+                <p>ABOUT US</p>
+            </a>
+            <a href="#staff">
+                <p>OUR TEAM</p>
+            </a>
         </div>
         <div class="infolegale">
             <h3 style="text-decoration: underline;">SITE MAP</h3>
-            <a href="https://discord.gg/acvirtual" target="_blank" rel="noopener noreferrer"> <img src="photo/discorde.png" alt="" style="width: 40px; margin-bottom: 10px; "> </a>
-            <a href="https://vamsys.io/login/acvirutal" target="_blank" rel="noopener noreferrer"><p>LOGIN</p></a>
-            <a href="https://vamsys.io/register/acvirutal" target="_blank" rel="noopener noreferrer"><p>REGISTER</p></a>
+            <a href="https://discord.gg/acvirtual" target="_blank" rel="noopener noreferrer"> <img
+                    src="photo/discorde.png" alt="" style="width: 40px; margin-bottom: 10px; "> </a>
+            <a href="https://vamsys.io/login/acvirutal" target="_blank" rel="noopener noreferrer">
+                <p>LOGIN</p>
+            </a>
+            <a href="https://vamsys.io/register/acvirutal" target="_blank" rel="noopener noreferrer">
+                <p>REGISTER</p>
+            </a>
+        </div></div>
 
-
-
-
-
-
-
-        </div>
         <div class="disclamer">
             <p>Air Canada Virtual is a non-profit organization under the regulation of the IFVARB, the governing body
                 for virtual airlines in flight simulation. We are not associated, endorsed or affiliated with the
